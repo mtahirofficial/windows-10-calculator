@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator</title>
+    <link rel="shortcut icon" href="../images/fm.png" type="image/x-icon">
+
+    <link href="style.css" type="text/css" rel="Stylesheet" />
+</head>
+
+<body class="no-select">
+    <div class="fm-logo">
+        <img src="../images/fmdevndesign-logo-white.png" alt="fm-logo" title="fm devndesign" width="150px">
+    </div>
+    <div id="calculator">
+        <div class="top">
+            <div class="screen no-select">
+                <input class="no-select" type="text" name="expression" id="expression">
+                <input class="no-select" type="text" name="result" id="result">
+            </div>
+        </div>
+        <table class="keys">
+            <tr>
+                <td onclick="setValue(id)" id="percent" class="key">%</td>
+                <td onclick="setValue(id)" id="clearEntry" class="key clear">CE</td>
+                <td onclick="setValue(id)" id="clear" class="key">C</td>
+                <td onclick="setValue(id)" id="backSpace" class="key">⌫</td>
+            </tr>
+
+            <tr>
+                <!-- 1⁄𝓍 -->
+                <td onclick="setValue(id)" id="half" class="key"><sup>1</sup>&frasl;<sub>&#120013;</sub></td>
+                <!-- 𝓍2 -->
+                <td onclick="setValue(id)" id="square" class="key">&#120013;<sup>2</sup></td>
+                <!-- √ -->
+                <td onclick="setValue(id)" id="squareRoot" class="key">&radic;</td>
+                <td onclick="setValue(id)" id="divide" class="key operator">÷</td>
+            </tr>
+
+            <tr>
+                <td onclick="setValue(id)" id="seven" class="key num">7</td>
+                <td onclick="setValue(id)" id="eight" class="key num">8</td>
+                <td onclick="setValue(id)" id="nine" class="key num">9</td>
+                <td onclick="setValue(id)" id="multiply" class="key operator">x</td>
+            </tr>
+
+            <tr>
+                <td onclick="setValue(id)" id="four" class="key num">4</td>
+                <td onclick="setValue(id)" id="five" class="key num">5</td>
+                <td onclick="setValue(id)" id="six" class="key num">6</td>
+                <td onclick="setValue(id)" id="subtract" class="key operator">-</td>
+
+
+
+            </tr>
+
+            <tr>
+                <td onclick="setValue(id)" id="one" class="key num">1</td>
+                <td onclick="setValue(id)" id="two" class="key num">2</td>
+                <td onclick="setValue(id)" id="three" class="key num">3</td>
+                <td onclick="setValue(id)" id="plus" class="key operator">+</td>
+            </tr>
+            <tr>
+                <!-- ± -->
+                <td onclick="setValue(id)" id="negativePlus" class="key">±</td>
+                <td onclick="setValue(id)" id="zero" class="key num">0</td>
+                <td onclick="setValue(id)" id="dot" class="key">.</td>
+                <td onclick="setValue(id)" id="equal" class="key operator">=</td>
+            </tr>
+
+            <!-- 𝓍3 -->
+            <!-- <td onclick="setValue(id)" id="cube" class="key">&#120013;<sup>3</sup></td> -->
+            <!-- <span class="back">←</span>
+            <span>±</span> -->
+
+        </table>
+    </div>
+    <div id="info">
+        <h4 id="heading">Muhammad Tahir</h4>
+        <p>Windows 10 Calculator Using Javascript</p>
+        <p>Roll No. <span style="color: #00ACDA; font-weight: 300;">WM5957</span></p>
+        <p>Web and Hybrid Mobile App Development</p>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
